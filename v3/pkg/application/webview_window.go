@@ -2,7 +2,6 @@ package application
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"runtime"
 	"slices"
