@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"runtime/debug"
-
+	"fmt"
 	"github.com/pkg/browser"
 
 	"github.com/pterm/pterm"
