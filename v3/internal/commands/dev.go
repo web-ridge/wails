@@ -42,6 +42,8 @@ func Dev(options *DevOptions) error {
 	// 	return err
 	// }
 
+	fmt.Println("webRidge version of wails running!!")
+
 	// Set environment variable for the dev:frontend task
 	os.Setenv(wailsVitePort, strconv.Itoa(port))
 
