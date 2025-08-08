@@ -30,6 +30,9 @@ func init() {
 }
 
 func main() {
+
+	fmt.Println("webRidge version!")
+
 	app := clir.NewCli("wails", "The Wails3 CLI", "v3")
 	app.NewSubCommand("docs", "Open the docs").Action(openDocs)
 	app.NewSubCommandFunction("init", "Initialise a new project", commands.Init)
