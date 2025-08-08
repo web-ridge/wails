@@ -34,13 +34,13 @@ func Dev(options *DevOptions) error {
 	}
 
 	// check if port is already in use
-	l, err := net.Listen("tcp", fmt.Sprintf("%s:%d", host, port))
-	if err != nil {
-		return err
-	}
-	if err = l.Close(); err != nil {
-		return err
-	}
+	// l, err := net.Listen("tcp", fmt.Sprintf("%s:%d", host, port))
+	// if err != nil {
+	// 	return err
+	// }
+	// if err = l.Close(); err != nil {
+	// 	return err
+	// }
 
 	// Set environment variable for the dev:frontend task
 	os.Setenv(wailsVitePort, strconv.Itoa(port))
