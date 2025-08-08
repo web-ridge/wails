@@ -2,7 +2,6 @@ package commands
 
 import (
 	"fmt"
-	"net"
 	"os"
 	"strconv"
 
@@ -32,15 +31,6 @@ func Dev(options *DevOptions) error {
 	} else {
 		port = defaultVitePort
 	}
-
-	// check if port is already in use
-	// l, err := net.Listen("tcp", fmt.Sprintf("%s:%d", host, port))
-	// if err != nil {
-	// 	return err
-	// }
-	// if err = l.Close(); err != nil {
-	// 	return err
-	// }
 
 	fmt.Println("webRidge version of wails running!!")
 
